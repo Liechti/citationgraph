@@ -56,7 +56,7 @@ class PaperBFS(BFS):
     def _get_children(self, node):
         print 'this is node:', node.id_, node.title
         time.sleep(random.randint(4,15))
-        page = urllib.urlopen(node.outgoing_link)
+        page = urllib.urlopen(node.link)
         return self._parse_html(page.read())
         
     def _parse_html(self, html):
@@ -77,14 +77,16 @@ class Paper(object):
 
     urlbase = 'http://clair.eecs.umich.edu/aan/'
 
-    def __init__(self, id_, title, year):
+    def __init__(self, id_, title, year, link_type='outcoming'):
         self.id_ = id_
         self.title = title
         self.year = year
-        self.outgoing_link = Paper.urlbase + 'outgoing_citations.php?paper_id='+\
-                             self.id_
-        self.incoming_link = Paper.urlbase + 'incoming_citations.php?paper_id='+\
-                             self.id_
+        if link_type == 'outgoing':
+            self.link = Paper.urlbase +\
+                        'outgoing_citations.php?paper_id=' + self.id_
+        if link_type == 'incoming':
+            self.link = Paper.urlbase +\
+                        'incoming_citations.php?paper_id=' + self.id_
         self.incoming_citations = []
         self.outgoing_citations = []
 
@@ -94,7 +96,7 @@ if __name__ == '__main__':
     #            title='TnT - A Statistical Part-Of-Speech Tagger',
     #              year='2000')
     paper = Paper(id_='D10-1007', title='', year='')
-    result = PaperBFS(start_node=paper)
+    result = PaperBFS(start_node=paper, link_type='outgoing')
     for paper in result._visited:
         print paper.year, ':', paper.id_
     print len(result._visited), 'papers'

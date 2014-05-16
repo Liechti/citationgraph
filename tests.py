@@ -40,7 +40,7 @@ class BFSTest(unittest.TestCase):
         
         paper = Paper(id_='A00-1031', 
                       title='TnT - A Statistical Part-Of-Speech Tagger',
-                      year='2000')
+                      year='2000', link_type='outgoing')
         paper.outgoing_citations = [
             Paper(id_='A92-1018', title='A Practical Part-Of-Speech Tagger', 
                   year='1992'),
