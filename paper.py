@@ -57,7 +57,9 @@ class PaperBFS(BFS):
         print 'this is node:', node.id_, node.title
         time.sleep(random.randint(4,15))
         page = urllib.urlopen(node.link)
-        return self._parse_html(page.read())
+        outgoing_citations = self._parse_html(page.read())
+        node.outgoing_citations = outgoing_citations
+        return outgoing_citations
         
     def _parse_html(self, html):
         papers = []
@@ -70,14 +72,13 @@ class PaperBFS(BFS):
                 year = cells[2].div.text
                 print id_
                 papers.append(Paper(id_, title, year))
-        print 'Here are children', len(papers)
         return papers 
                 
 class Paper(object):
 
     urlbase = 'http://clair.eecs.umich.edu/aan/'
 
-    def __init__(self, id_, title, year, link_type='outcoming'):
+    def __init__(self, id_, title, year, link_type='outgoing'):
         self.id_ = id_
         self.title = title
         self.year = year
@@ -92,11 +93,8 @@ class Paper(object):
 
 
 if __name__ == '__main__':
-    #paper = Paper(id_='A00-1031', 
-    #            title='TnT - A Statistical Part-Of-Speech Tagger',
-    #              year='2000')
-    paper = Paper(id_='D10-1007', title='', year='')
-    result = PaperBFS(start_node=paper, link_type='outgoing')
+    paper = Paper(id_='D10-1007', title='', year='', link_type='outgoing')
+    result = PaperBFS(start_node=paper, iterations=3)
     for paper in result._visited:
-        print paper.year, ':', paper.id_
+        print paper.year, ':', paper.id_, len(paper.outgoing_citations)
     print len(result._visited), 'papers'
