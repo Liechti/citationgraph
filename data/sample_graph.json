@@ -1,0 +1,173 @@
+[
+    {
+        "outgoing": [
+            "H05-1044", 
+            "N09-1041", 
+            "N09-1057", 
+            "N09-2029", 
+            "N10-1122", 
+            "P08-1118", 
+            "P09-2079", 
+            "W04-1013", 
+            "W06-2915"
+        ], 
+        "incoming": [], 
+        "paper_id": "D10-1007"
+    }, 
+    {
+        "outgoing": [
+            "C04-1200", 
+            "H01-1014", 
+            "P02-1053", 
+            "P04-1034", 
+            "P04-1035", 
+            "P97-1003", 
+            "P97-1023", 
+            "W03-1014", 
+            "W03-1017"
+        ], 
+        "incoming": [], 
+        "paper_id": "H05-1044"
+    }, 
+    {
+        "outgoing": [
+            "D08-1035", 
+            "D08-1080", 
+            "N04-1015", 
+            "N06-1059", 
+            "N06-2046", 
+            "P03-1069", 
+            "P03-2021", 
+            "P06-1039", 
+            "P07-1069", 
+            "W04-1013"
+        ], 
+        "incoming": [], 
+        "paper_id": "N09-1041"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "N09-1057"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "N09-2029"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "N10-1122"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P08-1118"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P09-2079"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "W04-1013"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "W06-2915"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "C04-1200"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "H01-1014"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P02-1053"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P04-1034"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P04-1035"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P97-1003"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P97-1023"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "W03-1014"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "W03-1017"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "D08-1035"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "D08-1080"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "N04-1015"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "N06-1059"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "N06-2046"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P03-1069"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P03-2021"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P06-1039"
+    }, 
+    {
+        "outgoing": [], 
+        "incoming": [], 
+        "paper_id": "P07-1069"
+    }
+]

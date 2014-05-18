@@ -1,0 +1,142 @@
+[
+    {
+        "year": "", 
+        "paper_id": "D10-1007", 
+        "title": ""
+    }, 
+    {
+        "year": "2005", 
+        "paper_id": "H05-1044", 
+        "title": "Recognizing Contextual Polarity In Phrase-Level Sentiment Analysis"
+    }, 
+    {
+        "year": "2009", 
+        "paper_id": "N09-1041", 
+        "title": "Exploring Content Models for Multi-Document Summarization"
+    }, 
+    {
+        "year": "2009", 
+        "paper_id": "N09-1057", 
+        "title": "More than Words: Syntactic Packaging and Implicit Sentiment"
+    }, 
+    {
+        "year": "2009", 
+        "paper_id": "N09-2029", 
+        "title": "Contrastive Summarization: An Experiment with Consumer Reviews"
+    }, 
+    {
+        "year": "2010", 
+        "paper_id": "N10-1122", 
+        "title": "An Unsupervised Aspect-Sentiment Model for Online Reviews"
+    }, 
+    {
+        "year": "2008", 
+        "paper_id": "P08-1118", 
+        "title": "Finding Contradictions in Text"
+    }, 
+    {
+        "year": "2009", 
+        "paper_id": "P09-2079", 
+        "title": "Generalizing Dependency Features for Opinion Mining"
+    }, 
+    {
+        "year": "2004", 
+        "paper_id": "W04-1013", 
+        "title": "ROUGE: A Package For Automatic Evaluation Of Summaries"
+    }, 
+    {
+        "year": "2006", 
+        "paper_id": "W06-2915", 
+        "title": "Which Side Are You On? Identifying Perspectives At The Document And Sentence Levels"
+    }, 
+    {
+        "year": "2004", 
+        "paper_id": "C04-1200", 
+        "title": "Determining The Sentiment Of Opinions"
+    }, 
+    {
+        "year": "2001", 
+        "paper_id": "H01-1014", 
+        "title": "Converting Dependency Structures To Phrase Structures"
+    }, 
+    {
+        "year": "2002", 
+        "paper_id": "P02-1053", 
+        "title": "Thumbs Up Or Thumbs Down? Semantic Orientation Applied To Unsupervised Classification Of Reviews"
+    }, 
+    {
+        "year": "2004", 
+        "paper_id": "P04-1034", 
+        "title": "The Sentimental Factor: Improving Review Classification Via Human-Provided Information"
+    }, 
+    {
+        "year": "2004", 
+        "paper_id": "P04-1035", 
+        "title": "A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization Based On Minimum Cuts"
+    }, 
+    {
+        "year": "1997", 
+        "paper_id": "P97-1003", 
+        "title": "Three Generative Lexicalized Models For Statistical Parsing"
+    }, 
+    {
+        "year": "1997", 
+        "paper_id": "P97-1023", 
+        "title": "Predicting The Semantic Orientation Of Adjectives"
+    }, 
+    {
+        "year": "2003", 
+        "paper_id": "W03-1014", 
+        "title": "Learning Extraction Patterns For Subjective Expressions"
+    }, 
+    {
+        "year": "2003", 
+        "paper_id": "W03-1017", 
+        "title": "Towards Answering Opinion Questions: Separating Facts From Opinions And Identifying The Polarity Of Opinion Sentences"
+    }, 
+    {
+        "year": "2008", 
+        "paper_id": "D08-1035", 
+        "title": "Bayesian Unsupervised Topic Segmentation"
+    }, 
+    {
+        "year": "2008", 
+        "paper_id": "D08-1080", 
+        "title": "Topic-Driven Multi-Document Summarization with Encyclopedic Knowledge and Spreading Activation"
+    }, 
+    {
+        "year": "2004", 
+        "paper_id": "N04-1015", 
+        "title": "Catching The Drift: Probabilistic Content Models With Applications To Generation And Summarization"
+    }, 
+    {
+        "year": "2006", 
+        "paper_id": "N06-1059", 
+        "title": "An Information-Theoretic Approach To Automatic Evaluation Of Summaries"
+    }, 
+    {
+        "year": "2006", 
+        "paper_id": "N06-2046", 
+        "title": "Improved Affinity Graph Based Multi-Document Summarization"
+    }, 
+    {
+        "year": "2003", 
+        "paper_id": "P03-1069", 
+        "title": "Probabilistic Text Structuring: Experiments With Sentence Ordering"
+    }, 
+    {
+        "year": "2003", 
+        "paper_id": "P03-2021", 
+        "title": "INeATS: Interactive Multi-Document Summarization"
+    }, 
+    {
+        "year": "2006", 
+        "paper_id": "P06-1039", 
+        "title": "Bayesian Query-Focused Summarization"
+    }, 
+    {
+        "year": "2007", 
+        "paper_id": "P07-1069", 
+        "title": "Generating a Table-of-Contents"
+    }
+]

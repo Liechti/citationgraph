@@ -4,6 +4,7 @@ from collections import deque
 import urllib
 from bs4 import BeautifulSoup
 import time, random
+import json
 
 class BFS(object):
     '''
@@ -91,10 +92,37 @@ class Paper(object):
         self.incoming_citations = []
         self.outgoing_citations = []
 
+def to_json(papers):
+    '''Writes paper to the following format:
+    { paper_id : "",
+      title : "",
+      year : ""
+    }
+
+    Paper citations are represented in an adjaceny list:
+    {
+      paper_id : "",
+      incoming : [ <list of paper ids> ],
+      outgoing : [ <list of paper ids> ]
+    }
+    '''
+    out = []
+    adjancey_list = []
+    for paper in papers:
+        out.append({'paper_id': paper.id_, 'title': paper.title, 
+                    'year': paper.year })
+        adjancey_list.append(
+            { 'paper_id': paper.id_,
+              'incoming': [p.id_ for p in paper.incoming_citations],
+              'outgoing': [p.id_ for p in paper.outgoing_citations]})
+
+    with open("papers.json", 'w') as f:
+        json.dump(out, f, indent = 4)
+    with open("graph.json", 'w') as f:
+        json.dump(adjancey_list, f, indent = 4)
 
 if __name__ == '__main__':
     paper = Paper(id_='D10-1007', title='', year='', link_type='outgoing')
     result = PaperBFS(start_node=paper, iterations=3)
-    for paper in result._visited:
-        print paper.year, ':', paper.id_, len(paper.outgoing_citations)
     print len(result._visited), 'papers'
+    to_json(result._visited)
