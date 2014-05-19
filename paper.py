@@ -99,7 +99,7 @@ def to_json(papers):
       year : ""
     }
 
-    Paper citations are represented in an adjaceny list:
+    Paper citations are represented in an adjacency list:
     {
       paper_id : "",
       incoming : [ <list of paper ids> ],
@@ -107,19 +107,29 @@ def to_json(papers):
     }
     '''
     out = []
-    adjancey_list = []
+    adjacency_list = []
     for paper in papers:
         out.append({'paper_id': paper.id_, 'title': paper.title, 
                     'year': paper.year })
-        adjancey_list.append(
+        adjacency_list.append(
             { 'paper_id': paper.id_,
               'incoming': [p.id_ for p in paper.incoming_citations],
               'outgoing': [p.id_ for p in paper.outgoing_citations]})
 
-    with open("papers.json", 'w') as f:
+    with open("data/papers.json", 'w') as f:
         json.dump(out, f, indent = 4)
-    with open("graph.json", 'w') as f:
-        json.dump(adjancey_list, f, indent = 4)
+    with open("data/graph.json", 'w') as f:
+        json.dump(adjacency_list, f, indent = 4)
+
+def papers_from_json():
+    with open("data/sample_papers.json", 'r') as f:
+        return json.load(f)
+
+
+def graph_from_json():
+    with open("data/sample_graph.json", 'r') as f:
+        return json.load(f)
+
 
 if __name__ == '__main__':
     paper = Paper(id_='D10-1007', title='', year='', link_type='outgoing')
