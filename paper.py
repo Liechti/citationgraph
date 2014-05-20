@@ -2,9 +2,10 @@
 from __future__ import unicode_literals
 from collections import deque
 import urllib
-from bs4 import BeautifulSoup
-import time, random
 import json
+import time, random
+from bs4 import BeautifulSoup
+
 
 class BFS(object):
     '''
